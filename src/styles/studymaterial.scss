@@ -1,0 +1,40 @@
+.study{
+    display: flex;
+
+    .study-search{
+        width:1000px;
+
+
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        .card-each{
+            border:1px solid gray;
+            border-radius: 30px;
+           
+            margin:10px;
+
+
+        }
+    }
+}
+
+.card{
+    padding: 5px;
+    font-size:24px;
+    button{
+        margin: auto;
+        width:100%;
+        border: 1px solid black;
+        padding: 10px;
+         
+        border-radius: 20px;
+    }
+    img{
+        border-radius: 30px;
+        margin:3px;
+        width:100%;
+    }
+}
