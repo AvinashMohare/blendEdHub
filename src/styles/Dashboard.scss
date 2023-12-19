@@ -1,18 +1,20 @@
 .rootDashboard {
-    // background-color: red;
-    // position: relative;
+    position: relative;
+
     width: 100%;
     height: 100%;
     display: flex;
+    margin: 0;
 
     .centerDashboard {
         padding: 20px;
-        // margin-bottom: 50px;
+        margin: 0;
 
         width: 1120px;
         display: flex;
         flex-direction: column;
         .header {
+            margin: 0;
             padding: 0 0 20px 0;
         }
 
@@ -22,16 +24,15 @@
             height: fit-content;
 
             display: flex;
-            align-items: center;
             justify-content: space-between;
-
-            // background-color: red;
 
             .search-bar {
                 display: flex;
                 align-items: center;
                 padding: 5px;
-                width: 40%;
+                width: 45%;
+
+                margin: 0;
 
                 border-radius: 10px;
                 background: #fffafa;
@@ -141,12 +142,13 @@
         }
     }
 
-    // .right {
-    //     width: 340px;
-    //     height: 100%;
-    //     background-color: yellow;
+    .right {
+        width: 320px;
+        height: inherit;
+        background-color: yellow;
 
-    //     position: fixed;
-    //     right: 0;
-    // }
+        position: fixed;
+        right: 130px;
+        // right: 0;
+    }
 }

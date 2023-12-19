@@ -9,27 +9,27 @@ import {
     faUsers,
     faQuestionCircle,
     faClipboardList,
-    faUserCheck,
     faEnvelope,
     faTasks,
     faCog,
     faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import "../styles/Sidebar.scss"; // Import your SCSS file
+import "../styles/Sidebar.scss";
+import { Link } from "react-router-dom";
 
 const options = [
-    { icon: faChartBar, label: "Dashboard" },
-    { icon: faCalendarAlt, label: "Calendar" },
-    { icon: faBook, label: "Library" },
-    { icon: faChalkboardTeacher, label: "Classroom" },
-    { icon: faGraduationCap, label: "Courses" },
-    { icon: faUsers, label: "Co-curricular" },
-    { icon: faQuestionCircle, label: "Quizzes" },
-    { icon: faClipboardList, label: "Attendance" },
-    { icon: faEnvelope, label: "Messages" },
-    { icon: faTasks, label: "Assignments" },
-    { icon: faCog, label: "Settings" },
-    { icon: faSignOutAlt, label: "Log out" },
+    { icon: faChartBar, label: "Dashboard", path: "/" },
+
+    { icon: faBook, label: "Library", path: "/library" },
+    { icon: faChalkboardTeacher, label: "Classroom", path: "/classroom" },
+    { icon: faGraduationCap, label: "Courses", path: "/courses" },
+    { icon: faUsers, label: "Co-curricular", path: "/co-curricular" },
+    { icon: faQuestionCircle, label: "Quizzes", path: "/quizzes" },
+    { icon: faClipboardList, label: "Attendance", path: "/attendance" },
+    { icon: faEnvelope, label: "Messages", path: "/messages" },
+    { icon: faTasks, label: "Assignments", path: "/assignments" },
+    { icon: faCog, label: "Group Discussion", path: "/groupDiscussion" },
+    { icon: faSignOutAlt, label: "Log out", path: "/logout" },
 ];
 
 const Sidebar = () => {
@@ -41,13 +41,15 @@ const Sidebar = () => {
                     {options.map((option, index) => (
                         <div className="optionContainer">
                             <li key={index}>
-                                <div className="icon">
-                                    <FontAwesomeIcon
-                                        icon={option.icon}
-                                        size="2x"
-                                    />
-                                </div>
-                                <p className="option">{option.label}</p>
+                                <Link to={option.path}>
+                                    <div className="icon">
+                                        <FontAwesomeIcon
+                                            icon={option.icon}
+                                            size="2x"
+                                        />
+                                    </div>
+                                    <p className="option">{option.label}</p>
+                                </Link>
                             </li>
                         </div>
                     ))}

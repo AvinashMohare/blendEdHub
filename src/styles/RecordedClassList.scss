@@ -1,0 +1,44 @@
+.rootRecordedClass {
+    width: 100%;
+    height: 100%;
+
+    overflow-y: scroll;
+
+    .heading {
+        padding-left: 10px;
+    }
+
+    .customUl {
+        margin-top: 50px;
+        list-style: none;
+        .selected {
+            background: linear-gradient(
+                203.14deg,
+                #cad1e5 14.97%,
+                rgba(182, 188, 202, 0) 129.11%
+            );
+            font-weight: bold;
+            /* Add more styles as needed */
+        }
+        .recordedList {
+            list-style: none;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+
+            display: flex;
+            justify-content: space-between;
+
+            cursor: pointer;
+
+            &:hover {
+                background: linear-gradient(
+                    203.14deg,
+                    #cad1e5 14.97%,
+                    rgba(182, 188, 202, 0) 129.11%
+                );
+            }
+        }
+    }
+}
