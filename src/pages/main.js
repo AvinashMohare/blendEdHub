@@ -8,6 +8,7 @@ import ChatGPT from "../components/chatgpt";
 import GroupDiscussions from "../components/groupDiscussions";
 import Library from "./library";
 import Doubts from "./doubts";
+import Playground from "./playground";
 
 const Main = () => {
     return (
@@ -27,6 +28,7 @@ const Main = () => {
                             element={<GroupDiscussions />}
                         />
                         <Route path="/doubts" element={<Doubts />} />
+                        <Route path="/playground" element={<Playground/>} />
                     </Routes>
                 </div>
             </div>

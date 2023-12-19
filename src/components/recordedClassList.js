@@ -51,22 +51,24 @@ const RecordedClassList = ({ onSelectClass, selectedSubject }) => {
                         key={recordedClass.id}
                         onClick={() => handleClassClick(recordedClass)}
                     >
-                        <div className="card">
-                            <img
-                                src="https://media.istockphoto.com/id/1322530406/photo/stack-of-hardcover-text-books-on-white-background-isolated-3d-illustration.jpg?s=612x612&w=0&k=20&c=8WyU1MhfeK7YOai1BZJdkH7TPxNoWAVBdCuwoix9Ock="
-                                alt="Avatar"
-                                className="imgBook"
-                            />
-                            <div className="container">
-                                <FontAwesomeIcon
-                                    icon={faPlayCircle}
-                                    className="playIcon"
+                        <a href="http://127.0.0.1:5000/" target="__blank_">
+                            <div className="card">
+                                <img
+                                    src="https://media.istockphoto.com/id/1322530406/photo/stack-of-hardcover-text-books-on-white-background-isolated-3d-illustration.jpg?s=612x612&w=0&k=20&c=8WyU1MhfeK7YOai1BZJdkH7TPxNoWAVBdCuwoix9Ock="
+                                    alt="Avatar"
+                                    className="imgBook"
                                 />
+                                <div className="container">
+                                    <FontAwesomeIcon
+                                        icon={faPlayCircle}
+                                        className="playIcon"
+                                    />
 
-                                <p>{recordedClass.title}</p>
-                                <p>{recordedClass.duration}</p>
+                                    <p>{recordedClass.title}</p>
+                                    <p>{recordedClass.duration}</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </li>
                 ))}
             </ul>
