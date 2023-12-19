@@ -2,42 +2,54 @@
     width: 100%;
     height: 100%;
 
-    overflow-y: scroll;
+    // overflow-y: scroll;
 
-    .heading {
-        padding-left: 10px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .customUl {
         margin-top: 50px;
-        list-style: none;
-        .selected {
-            background: linear-gradient(
-                203.14deg,
-                #cad1e5 14.97%,
-                rgba(182, 188, 202, 0) 129.11%
-            );
-            font-weight: bold;
-            /* Add more styles as needed */
-        }
-        .recordedList {
-            list-style: none;
-            padding: 20px;
-            border: 1px solid black;
-            border-radius: 10px;
-            margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
 
-            display: flex;
-            justify-content: space-between;
+        .liRecordedClass {
+            list-style: none;
+        }
+
+        .card {
+            border-radius: 10px;
+            width: 400px;
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+
+            margin-bottom: 20px;
+            margin-left: 20px;
+            flex-wrap: wrap;
 
             cursor: pointer;
+            .imgBook {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
 
-            &:hover {
-                background: linear-gradient(
-                    203.14deg,
-                    #cad1e5 14.97%,
-                    rgba(182, 188, 202, 0) 129.11%
-                );
+            .container {
+                padding: 10px 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .download {
+                    background-color: blue;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    .text {
+                        padding: 5px 20px;
+                        color: white;
+                    }
+                }
             }
         }
     }

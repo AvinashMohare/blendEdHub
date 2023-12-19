@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import ChatGPT from "../components/chatgpt";
+import "../styles/Doubts.scss";
 
 const Doubts = () => {
     const [selectedOption, setSelectedOption] = useState(null);
@@ -8,8 +10,8 @@ const Doubts = () => {
     };
 
     return (
-        <div>
-            <h2>Doubts</h2>
+        <div className="rootDoubts">
+            {/* <h2>Doubts</h2>
             <div>
                 <button onClick={() => handleOptionSelect("Live Classroom")}>
                     Live Classroom
@@ -18,21 +20,18 @@ const Doubts = () => {
                     Ask ChatGPT
                 </button>
             </div>
-            {/* Based on the selected option, render different content */}
             {selectedOption === "Live Classroom" && (
                 <div>
-                    {/* Content for Live Classroom */}
                     <h3>Live Classroom Content</h3>
-                    {/* You can add more components or content specific to Live Classroom */}
                 </div>
             )}
             {selectedOption === "Ask ChatGPT" && (
                 <div>
-                    {/* Content for Ask ChatGPT */}
                     <h3>Ask ChatGPT Content</h3>
-                    {/* You can add more components or content specific to Ask ChatGPT */}
                 </div>
-            )}
+            )} */}
+
+            <ChatGPT />
         </div>
     );
 };

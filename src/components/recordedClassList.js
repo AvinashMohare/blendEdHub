@@ -47,16 +47,26 @@ const RecordedClassList = ({ onSelectClass, selectedSubject }) => {
             <ul className="customUl">
                 {classes.map((recordedClass) => (
                     <li
+                        className="liRecordedClass"
                         key={recordedClass.id}
                         onClick={() => handleClassClick(recordedClass)}
-                        className="recordedList"
                     >
-                        <FontAwesomeIcon
-                            icon={faPlayCircle}
-                            className="playIcon"
-                        />
-                        <p>{recordedClass.title}</p>
-                        <p>{recordedClass.duration}</p>
+                        <div className="card">
+                            <img
+                                src="https://media.istockphoto.com/id/1322530406/photo/stack-of-hardcover-text-books-on-white-background-isolated-3d-illustration.jpg?s=612x612&w=0&k=20&c=8WyU1MhfeK7YOai1BZJdkH7TPxNoWAVBdCuwoix9Ock="
+                                alt="Avatar"
+                                className="imgBook"
+                            />
+                            <div className="container">
+                                <FontAwesomeIcon
+                                    icon={faPlayCircle}
+                                    className="playIcon"
+                                />
+
+                                <p>{recordedClass.title}</p>
+                                <p>{recordedClass.duration}</p>
+                            </div>
+                        </div>
                     </li>
                 ))}
             </ul>
