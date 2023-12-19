@@ -1,49 +1,9 @@
-// import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
-// import RecordedClassData from "./recordedClassData"; // Update the path to your data file
-// import "../styles/RecordedClassList.scss";
-// import { useState } from "react";
-
-// const RecordedClassList = ({ onSelectClass }) => {
-//     const [selectedId, setSelectedId] = useState(RecordedClassData[0].id);
-
-//     const handleClassClick = (selectedClass) => {
-//         onSelectClass(selectedClass);
-//         setSelectedId(selectedClass.id);
-//     };
-
-//     return (
-//         <div className="rootRecordedClass">
-//             <h2 className="heading">Recorded Classes</h2>
-//             <ul className="customUl">
-//                 {RecordedClassData.map((recordedClass) => (
-//                     <li
-//                         key={recordedClass.id}
-//                         className={`recordedList ${
-//                             selectedId === recordedClass.id ? "selected" : ""
-//                         }`}
-//                         onClick={() => handleClassClick(recordedClass)}
-//                     >
-//                         <FontAwesomeIcon
-//                             icon={faPlayCircle}
-//                             className="playIcon"
-//                         />
-//                         <p>{recordedClass.name}</p>
-//                         <p>{recordedClass.duration}</p>
-//                     </li>
-//                 ))}
-//             </ul>
-//         </div>
-//     );
-// };
-
-// export default RecordedClassList;
-
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore"; // Import Firestore functions
 import "../styles/RecordedClassList.scss";
 import { db } from "../firebase"; // Update the path to your Firebase config
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
 const RecordedClassList = ({ onSelectClass, selectedSubject }) => {
     const [classes, setClasses] = useState([]);
@@ -83,17 +43,20 @@ const RecordedClassList = ({ onSelectClass, selectedSubject }) => {
 
     return (
         <div className="rootRecordedClass">
-            <h2 className="heading">Selected Subject: {selectedSubject}</h2>
+            <h2 className="heading">Assigned Modules </h2>
             <ul className="customUl">
                 {classes.map((recordedClass) => (
                     <li
                         key={recordedClass.id}
                         onClick={() => handleClassClick(recordedClass)}
+                        className="recordedList"
                     >
-                        {/* Render your class data here */}
+                        <FontAwesomeIcon
+                            icon={faPlayCircle}
+                            className="playIcon"
+                        />
                         <p>{recordedClass.title}</p>
                         <p>{recordedClass.duration}</p>
-                        {/* Add more fields as needed */}
                     </li>
                 ))}
             </ul>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RecordedClassList from "../components/recordedClassList";
 import VideoPlayer from "../components/videoPlayer";
-import "../styles/ClassModules.scss";
+import "../styles/ClassDesc.scss";
 
 const ClassDesc = ({ selectedSubject }) => {
     const [selectedClass, setSelectedClass] = useState("");

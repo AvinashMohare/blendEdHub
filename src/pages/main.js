@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom"; // For newer versions of react-router-dom
 import ChatGPT from "../components/chatgpt";
 import GroupDiscussions from "../components/groupDiscussions";
+import Library from "./library";
 
 const Main = () => {
     return (
@@ -20,7 +21,7 @@ const Main = () => {
                         <Route path="/" element={<Dashboard />} />
 
                         <Route path="/classroom" element={<ClassModules />} />
-                        <Route path="/library" element={<ChatGPT />} />
+                        <Route path="/library" element={<Library />} />
                         <Route
                             path="/groupDiscussion"
                             element={<GroupDiscussions />}
