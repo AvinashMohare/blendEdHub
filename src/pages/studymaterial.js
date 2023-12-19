@@ -16,6 +16,10 @@ function Studymaterial() {
           <div className="study-search-bar">
             <input placeholder="search"></input>
           </div>
+          <div className="profile">
+            <img src="" alt="logo-here"></img>
+            <h5>Name</h5>
+          </div>
         </div>
         {/* icons  */}
         <div className="cards">

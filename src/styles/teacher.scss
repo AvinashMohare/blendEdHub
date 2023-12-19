@@ -1,0 +1,92 @@
+.teacher {
+  overflow-x: hidden;
+  display: flex;
+  background: white;
+  h1 {
+    margin: 20px;
+  }
+  .sidebar {
+    box-shadow: 2px 2px 2px #a8a6a6;
+    width: 340px;
+  }
+  .center {
+    font-size: medium;
+    width: 40%;
+    height: 100vh;
+    .mode-main {
+     
+      .modes {
+        height: max-content;
+        border:none;
+        margin: 1%;
+        margin-top: 2%;
+        .mode-card {
+          display: flex;
+          color: rgb(141, 141, 142);
+          max-width:100%;
+          margin: 1%;
+          margin-left:20px;
+          padding: 5px;
+          text-overflow: none;
+          font-weight: 100;
+          border: 1px solid gray;
+          border-radius: 20px;
+          box-shadow: 1px black;
+          h2 {
+            padding: 10px 10px 5px 5px;
+            width: 100%;
+            font-weight: 100;
+            font-size: large;
+          }
+          h3 {
+            text-align: right;
+            padding: 10px 10px 5px 5px;
+          }
+        }
+        .mode-card.special-background{
+          background-color: rgb(174, 216, 255);
+          box-shadow: 5px 2px 2px #a8a6a6;
+          border:none;
+          color: black;
+        }
+        .mode-card:hover{
+          border:none;
+          cursor: pointer;
+          box-shadow: 5px 2px 2px #a8a6a6;
+          background-color: rgb(234, 247, 243);
+          color:black;
+        }
+      }
+    
+    }
+    .attendence-main {
+      width: 800px;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      margin: 5px;
+      margin-top: 30px;
+      .attendence {
+        display: flex;
+        .attendence-card {
+          flex-direction: column;
+          border: 1px solid gray;
+          border-radius: 20px;
+          padding: 5%;
+          margin: 1%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .course {
+    margin-left: 2%;
+    padding:10px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(192, 218, 255);
+    border: 1px;
+    width: 70%;
+    height: 100vh;
+  }
+}

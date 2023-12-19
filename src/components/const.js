@@ -36,3 +36,31 @@ export const STUDY = [
     button: "Open Classroom",
   },
 ];
+
+export const LEADERBOARD = [
+  {
+    name: "Aditi Dalvi",
+    rank: "1",
+  },
+  {
+    name: "Aditi Dalvi",
+    rank: "2",
+  },
+  {
+    name: "Aditi Dalvi",
+    rank: "3",
+  },
+];
+
+export const MODES = [
+  {title:"Classroom",
+  num:"25/32"
+},
+{title:"Online ",
+num:"12/42"
+},
+{title:"Project",
+num:"23/32"
+},
+
+];
