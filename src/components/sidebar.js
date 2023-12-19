@@ -26,7 +26,7 @@ const options = [
     { icon: faUsers, label: "Co-curricular", path: "/co-curricular" },
     { icon: faQuestionCircle, label: "Quizzes", path: "/quizzes" },
     { icon: faClipboardList, label: "Attendance", path: "/attendance" },
-    { icon: faEnvelope, label: "Messages", path: "/messages" },
+    { icon: faEnvelope, label: "Doubts", path: "/doubts" },
     { icon: faTasks, label: "Assignments", path: "/assignments" },
     { icon: faCog, label: "Group Discussion", path: "/groupDiscussion" },
     { icon: faSignOutAlt, label: "Log out", path: "/logout" },

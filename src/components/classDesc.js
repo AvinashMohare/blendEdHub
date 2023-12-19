@@ -13,11 +13,16 @@ const ClassDesc = ({ selectedSubject }) => {
     return (
         <div className="rootClassModule">
             <div className="center">
-                <h1>
-                    {selectedClass ? selectedClass.name : "No class selected"}
-                </h1>
-                <div className="video">
-                    <VideoPlayer selectedClass={selectedClass} />
+                <h1>{selectedSubject}</h1>
+                <div className="content">
+                    <h1 className="warning">
+                        {selectedClass
+                            ? selectedClass.name
+                            : "No class selected"}
+                    </h1>
+                    <div className="video">
+                        <VideoPlayer selectedClass={selectedClass} />
+                    </div>
                 </div>
             </div>
             <div className="right">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SubjectSelection from "../components/subjectSelection";
 import ClassDesc from "../components/classDesc"; // Assuming ClassDesc component file path
+import "../styles/ClassModules.scss";
 
 const ClassModules = () => {
     const [selectedSubject, setSelectedSubject] = useState(null);
@@ -12,9 +13,13 @@ const ClassModules = () => {
     return (
         <div className="classModules">
             {!selectedSubject ? (
-                <SubjectSelection onSelectSubject={handleSelectSubject} />
+                <div className="subjectSelection">
+                    <SubjectSelection onSelectSubject={handleSelectSubject} />
+                </div>
             ) : (
-                <ClassDesc selectedSubject={selectedSubject} />
+                <div className="classDesc">
+                    <ClassDesc selectedSubject={selectedSubject} />
+                </div>
             )}
         </div>
     );

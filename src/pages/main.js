@@ -2,12 +2,12 @@ import Dashboard from "./dashboard";
 import Sidebar from "../components/sidebar";
 import "../styles/Main.scss";
 import ClassModules from "./classModules";
-import Classroom from "./classroom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom"; // For newer versions of react-router-dom
 import ChatGPT from "../components/chatgpt";
 import GroupDiscussions from "../components/groupDiscussions";
 import Library from "./library";
+import Doubts from "./doubts";
 
 const Main = () => {
     return (
@@ -26,6 +26,7 @@ const Main = () => {
                             path="/groupDiscussion"
                             element={<GroupDiscussions />}
                         />
+                        <Route path="/doubts" element={<Doubts />} />
                     </Routes>
                 </div>
             </div>
