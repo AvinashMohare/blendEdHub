@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Matter from 'matter-js';
+import React, { useEffect, useRef, useState } from "react";
+import Matter from "matter-js";
 
 const DoublePendulumExample = () => {
   const engineRef = useRef(null);
@@ -57,7 +57,7 @@ const DoublePendulumExample = () => {
         frictionAir: 0,
         chamfer: 5,
         render: {
-          fillStyle: 'transparent',
+          fillStyle: "transparent",
           lineWidth: 1,
         },
       });
@@ -70,7 +70,7 @@ const DoublePendulumExample = () => {
       length: 0,
       angularStiffness: 0.7,
       render: {
-        strokeStyle: '#4a485b',
+        strokeStyle: "#4a485b",
       },
     });
 
@@ -86,7 +86,7 @@ const DoublePendulumExample = () => {
         stiffness: 0.9,
         length: 0,
         render: {
-          strokeStyle: '#4a485b',
+          strokeStyle: "#4a485b",
         },
       })
     );
@@ -102,7 +102,7 @@ const DoublePendulumExample = () => {
 
     const trail = [];
 
-    Events.on(render, 'afterRender', function () {
+    Events.on(render, "afterRender", function () {
       trail.unshift({
         position: Vector.clone(lowerArm.position),
         speed: lowerArm.speed,
@@ -116,7 +116,7 @@ const DoublePendulumExample = () => {
         const speed = trail[i].speed;
 
         const hue = 250 + Math.round((1 - Math.min(1, speed / 10)) * 170);
-        render.context.fillStyle = 'hsl(' + hue + ', 100%, 55%)';
+        render.context.fillStyle = "hsl(" + hue + ", 100%, 55%)";
         render.context.fillRect(point.x, point.y, 2, 2);
       }
 
@@ -158,9 +158,13 @@ const DoublePendulumExample = () => {
       Render.stop(render);
       Runner.stop(runner);
     };
-  }, []); // Run only once on component mount
+  }, []); // Run only once on component mount(
 
-  return isRenderingInitialized ? <div ref={renderRef} /> : null;
+  return (
+    <>
+      isRenderingInitialized ? <div ref={renderRef} /> : null;
+    </>
+  );
 };
 
 export default DoublePendulumExample;

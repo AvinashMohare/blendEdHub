@@ -1,0 +1,64 @@
+/* Calendar Container */
+.calendar {
+    font-family: 'Arial', sans-serif;
+    max-width: 650px;
+    margin: auto;
+  }
+  
+  /* Weekdays Row */
+  .weekdays {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 30px;
+  }
+  
+  .weekday {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Days Grid */
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  /* Day Cell */
+  .day {
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .day:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Empty Day Cell */
+  .day.empty {
+    background-color: #f8f8f8;
+  }
+  
+  /* Selected Day Cell */
+  .day.selected {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Header Styles */
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Example: Responsive Styles */
+  @media (max-width: 600px) {
+    .calendar {
+      max-width: 100%;
+    }
+  }
+  

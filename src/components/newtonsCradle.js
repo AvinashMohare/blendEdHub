@@ -1,5 +1,15 @@
-import React, { useEffect, useRef } from 'react';
-import Matter, { Engine, Render, Runner, Body, Composite, Constraint, Bodies, MouseConstraint, Mouse } from 'matter-js';
+import React, { useEffect, useRef } from "react";
+import Matter, {
+  Engine,
+  Render,
+  Runner,
+  Body,
+  Composite,
+  Constraint,
+  Bodies,
+  MouseConstraint,
+  Mouse,
+} from "matter-js";
 
 const NewtonsCradleExample = () => {
   const engineRef = useRef(null);
@@ -70,18 +80,26 @@ const NewtonsCradleExample = () => {
   }, []); // Run only once on component mount
 
   const createNewtonsCradle = (xx, yy, number, size, length) => {
-    const newtonsCradle = Composite.create({ label: 'Newtons Cradle' });
+    const newtonsCradle = Composite.create({ label: "Newtons Cradle" });
 
     for (let i = 0; i < number; i++) {
       const separation = 1.9;
-      const circle = Bodies.circle(xx + i * (size * separation), yy + length, size, {
-        inertia: Infinity,
-        restitution: 1,
-        friction: 0,
-        frictionAir: 0,
-        slop: size * 0.02,
+      const circle = Bodies.circle(
+        xx + i * (size * separation),
+        yy + length,
+        size,
+        {
+          inertia: Infinity,
+          restitution: 1,
+          friction: 0,
+          frictionAir: 0,
+          slop: size * 0.02,
+        }
+      );
+      const constraint = Constraint.create({
+        pointA: { x: xx + i * (size * separation), y: yy },
+        bodyB: circle,
       });
-      const constraint = Constraint.create({ pointA: { x: xx + i * (size * separation), y: yy }, bodyB: circle });
 
       Composite.addBody(newtonsCradle, circle);
       Composite.addConstraint(newtonsCradle, constraint);
@@ -90,7 +108,32 @@ const NewtonsCradleExample = () => {
     return newtonsCradle;
   };
 
-  return <div ref={renderRef} />;
+  return (
+    <div style={{ margin: "11%" }}>
+      <h1 className="text-center" style={{ margin: 30 }}>
+        FRICTION SIMULATION
+      </h1>
+      <p style={{ margin: 30 }}>
+        In this you will learn how friction acts on bodies and how different
+        levels of friction affect the motion of a freely
+      </p>
+      <p style={{ margin: 30 }}>
+        Friction, a force resisting motion, varies on different planes. On
+        inclined surfaces, friction opposes the component of an object's weight
+        parallel to the plane, affecting sliding or rolling. The coefficient of
+        friction determines its strength, impacting how objects interact with
+        surfaces, influencing stability, and determining their ability to
+        overcome resistance. The frictional force on an inclined plane depends
+        on the angle of inclination. As the angle increases, the component of
+        the object's weight parallel to the plane also increases, intensifying
+        the force resisting motion. This relationship is described by the
+        equation � friction = � ⋅ � normal f friction ​ =μ⋅f normal ​ , where �
+        μ is the coefficient of friction and � normal f normal ​ is the normal
+        force acting perpendicular to the inclined surface.{" "}
+      </p>
+      <div ref={renderRef} />;
+    </div>
+  );
 };
 
 export default NewtonsCradleExample;

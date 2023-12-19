@@ -9,14 +9,12 @@ import AirFrictionExample from "./components/airFriction";
 import NewtonsCradleExample from "./components/newtonsCradle";
 import StaticFrictionExample from "./components/staticFriction";
 
-
+import Calendar from "./components/Lowpaced";
 
 function App() {
   return (
     <>
-    
-    <StaticFrictionExample/>
-    
+      <Calendar />
     </>
   );
 }

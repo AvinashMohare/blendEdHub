@@ -76,7 +76,35 @@ const AirFrictionExample = () => {
     };
   }, []); // Run only once on component mount
 
-  return <div ref={renderRef} />;
+  return (
+  <>
+    <div style={{ margin:'11%' }}>
+      <h1 className="text-center" style={{ margin: 30,  }}>
+        FRICTION SIMULATION
+      </h1>
+      <p style={{ margin: 30 }}>
+        In this you will learn how friction acts on bodies and how different
+        levels of friction affect the motion of a freely
+      </p>
+      <p style={{ margin: 30 }}>
+        Friction, a force resisting motion, varies on different planes. On
+        inclined surfaces, friction opposes the component of an object's weight
+        parallel to the plane, affecting sliding or rolling. The coefficient of
+        friction determines its strength, impacting how objects interact with
+        surfaces, influencing stability, and determining their ability to
+        overcome resistance. The frictional force on an inclined plane depends
+        on the angle of inclination. As the angle increases, the component of
+        the object's weight parallel to the plane also increases, intensifying
+        the force resisting motion. This relationship is described by the
+        equation � friction = � ⋅ � normal f friction ​ =μ⋅f normal ​ , where �
+        μ is the coefficient of friction and � normal f normal ​ is the normal
+        force acting perpendicular to the inclined surface.{" "}
+      </p>
+    <div ref={renderRef} />;
+    </div>
+  </>
+  
+)
 };
 
 export default AirFrictionExample;
