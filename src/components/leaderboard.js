@@ -4,65 +4,34 @@ import "../styles/Leaderboard.scss"; // Import your SCSS file
 const childrenData = [
     {
         id: 1,
-        name: "Child 1",
-        score: 150,
+        name: "Avinash Mohare",
+        score: 350,
         imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
     },
     {
         id: 2,
-        name: "Child 2",
+        name: "Ashwin Navnage",
         score: 200,
         imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
     },
     {
-        id: 1,
-        name: "Child 1",
+        id: 3,
+        name: "Sanika Peshkar",
         score: 150,
         imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
     },
     {
-        id: 2,
-        name: "Child 2",
-        score: 200,
+        id: 4,
+        name: "Aditi Dhule",
+        score: 100,
         imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
     },
     {
-        id: 1,
-        name: "Child 1",
-        score: 150,
+        id: 5,
+        name: "Harsh Wardhan",
+        score: 50,
         imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
     },
-    {
-        id: 2,
-        name: "Child 2",
-        score: 200,
-        imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
-    },
-    {
-        id: 1,
-        name: "Child 1",
-        score: 150,
-        imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
-    },
-    {
-        id: 2,
-        name: "Child 2",
-        score: 200,
-        imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
-    },
-    {
-        id: 1,
-        name: "Child 1",
-        score: 150,
-        imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
-    },
-    {
-        id: 2,
-        name: "Child 2",
-        score: 200,
-        imageUrl: "https://via.placeholder.com/150", // Replace with actual image URL
-    },
-    // Add more children data as needed
 ];
 
 const Leaderboard = () => {

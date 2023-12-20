@@ -5,18 +5,11 @@ const ChapterProgress = () => {
     // Example array of chapters with progress
     const chapters = [
         { name: "Chapter 1", progress: 30, subject: "English" },
-        { name: "Chapter 2", progress: 60, subject: "English" },
-        { name: "Chapter 3", progress: 90, subject: "English" },
-        { name: "Chapter 1", progress: 30, subject: "English" },
-        { name: "Chapter 2", progress: 60, subject: "English" },
-        { name: "Chapter 3", progress: 90, subject: "English" },
-        { name: "Chapter 1", progress: 30, subject: "English" },
-        { name: "Chapter 2", progress: 60, subject: "English" },
-        { name: "Chapter 3", progress: 90, subject: "English" },
-        { name: "Chapter 1", progress: 30, subject: "English" },
-        { name: "Chapter 2", progress: 60, subject: "English" },
-        { name: "Chapter 3", progress: 90, subject: "English" },
-        // Add more chapters as needed
+        { name: "Chapter 2", progress: 60, subject: "Maths" },
+        { name: "Chapter 3", progress: 90, subject: "Physics" },
+        { name: "Chapter 1", progress: 30, subject: "Chemistry" },
+        { name: "Chapter 2", progress: 60, subject: "Hindi" },
+        { name: "Chapter 3", progress: 90, subject: "Sanskrit" },
     ];
 
     return (

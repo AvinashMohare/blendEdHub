@@ -10,60 +10,16 @@ const childrenData = [
     },
     {
         id: 2,
-        name: "Chemistry",
-        chapter: 4,
+        name: "Physics",
+        chapter: 1,
         status: "Pending", // Replace with actual image URL
     },
     {
-        id: 1,
-        name: "Chemistry",
-        chapter: 4,
+        id: 3,
+        name: "Maths",
+        chapter: 2,
         status: "Pending", // Replace with actual image URL
     },
-    {
-        id: 2,
-        name: "Chemistry",
-        chapter: 4,
-        status: "Pending", // Replace with actual image URL
-    },
-    {
-        id: 1,
-        name: "Chemistry",
-        chapter: 4,
-        status: "Pending", // Replace with actual image URL
-    },
-    {
-        id: 2,
-        name: "Chemistry",
-        chapter: 4,
-        status: "Pending", // Replace with actual image URL
-    },
-    {
-        id: 1,
-        name: "Chemistry",
-        chapter: 4,
-        status: "Pending", // Replace with actual image URL
-    },
-    {
-        id: 2,
-        name: "Chemistry",
-
-        chapter: 4,
-        status: "Pending", // Replace with actual image URL
-    },
-    {
-        id: 1,
-        name: "Chemistry",
-        chapter: 4,
-        status: "Pending", // Replace with actual image URL
-    },
-    {
-        id: 2,
-        name: "Chemistry",
-        chapter: 4,
-        status: "Pending", // Replace with actual image URL
-    },
-    // Add more children data as needed
 ];
 
 const Quizes = () => {

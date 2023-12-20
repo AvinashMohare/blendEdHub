@@ -4,17 +4,17 @@ const GroupDiscussions = () => {
     // Fake discussion data for demonstration
     const discussionData = [
         {
-            userName: "Alice",
+            userName: "Avinash",
             content: "I think the first topic is really interesting!",
             timestamp: "2023-12-18 10:30 AM",
         },
         {
-            userName: "Bob",
+            userName: "Ashwin",
             content: "Yes, I agree. The second topic is challenging though.",
             timestamp: "2023-12-18 11:15 AM",
         },
         {
-            userName: "Eve",
+            userName: "Aditi",
             content:
                 "I found some helpful resources on the second topic. Let me share...",
             timestamp: "2023-12-18 12:00 PM",

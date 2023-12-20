@@ -37,12 +37,12 @@ const SubjectSelection = ({ onSelectSubject }) => {
             <div className="SubjectSelection">
                 <div className="subject-each">
                     <button onClick={() => handleSubjectSelection("Maths")}>
-                        Math
+                        Physics
                     </button>
                 </div>
                 <div className="subject-each">
                     <button onClick={() => handleSubjectSelection("Science")}>
-                        Science
+                        Chemistry
                     </button>
                 </div>
                 <div className="subject-each">

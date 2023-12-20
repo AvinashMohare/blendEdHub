@@ -49,13 +49,13 @@ function Dashboard() {
                     <h3>Announcement</h3>
                     <div className="msgContainer">
                         <p className="msg">
-                            Hello swetha, you have a quiz on “Organic Chemistry”
-                            pending!
+                            Team Polaris is participating in Smart India
+                            Hackathon Grand Finale 2023 !!
                         </p>
 
-                        <div className="button">
+                        {/* <div className="button">
                             <p>Start</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -79,7 +79,7 @@ function Dashboard() {
                 </div>
             </div>
 
-            <div className="right"></div>
+            {/* <div className="right"></div> */}
         </div>
     );
 }

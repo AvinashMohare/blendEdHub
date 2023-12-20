@@ -9,6 +9,7 @@ import GroupDiscussions from "../components/groupDiscussions";
 import Library from "./library";
 import Doubts from "./doubts";
 import Playground from "./playground";
+import Calendar from "./calendar";
 
 const Main = () => {
     return (
@@ -28,7 +29,8 @@ const Main = () => {
                             element={<GroupDiscussions />}
                         />
                         <Route path="/doubts" element={<Doubts />} />
-                        <Route path="/playground" element={<Playground/>} />
+                        <Route path="/attendance" element={<Calendar />} />
+                        <Route path="/playground" element={<Playground />} />
                     </Routes>
                 </div>
             </div>
