@@ -1,0 +1,127 @@
+// .leaderboard {
+//     // padding: 20px;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #fff;
+//     border-radius: 10px;
+
+//     overflow-y: auto;
+//     overflow-x: hidden;
+
+//     &::-webkit-scrollbar {
+//         width: 0; /* Hide scrollbar */
+//     }
+
+//     &::-webkit-scrollbar-thumb {
+//         background-color: transparent; /* You can set a color for the scrollbar thumb */
+//         border-radius: 10px; /* You can add border-radius or other properties */
+//     }
+
+//     .heading {
+//         margin-bottom: 20px;
+//     }
+
+//     ul {
+//         list-style: none;
+//         padding: 0;
+//         margin: 0;
+//     }
+
+//     .leaderboard__card {
+//         display: flex;
+//         align-items: center;
+//         padding: 10px;
+//         border: 1px solid #ccc;
+//         border-radius: 8px;
+//         margin-bottom: 10px;
+
+//         img {
+//             width: 50px;
+//             height: 50px;
+//             border-radius: 50%;
+//             margin-right: 15px;
+//             object-fit: cover;
+//         }
+
+//         .leaderboard__details {
+//             flex: 1;
+
+//             h3 {
+//                 margin: 0;
+//                 font-size: 1.2em;
+//                 margin-bottom: 5px;
+//             }
+
+//             p {
+//                 margin: 0;
+//                 color: #888;
+//                 font-size: 0.9em;
+//             }
+//         }
+//     }
+// }
+
+.leaderboard {
+    // padding: 20px;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0; /* Hide scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent; /* You can set a color for the scrollbar thumb */
+        border-radius: 10px; /* You can add border-radius or other properties */
+    }
+
+    .heading {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .leaderboard__card {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #d4deffdb;
+
+        border-radius: 8px;
+        margin-bottom: 10px;
+
+        .leaderboard__image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            background-color: red;
+        }
+
+        .leaderboard__details {
+            flex: 1;
+
+            h3 {
+                margin: 0;
+                font-size: 1.2em;
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin: 0;
+                color: #888;
+                font-size: 0.9em;
+            }
+        }
+    }
+}

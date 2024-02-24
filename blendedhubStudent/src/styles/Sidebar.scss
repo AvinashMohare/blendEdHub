@@ -1,0 +1,95 @@
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    margin: 10px;
+    color: #16181b; /* Dark text color */
+    background-color: white; /* Lighter background color */
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(44, 62, 80, 0.25);
+    overflow-y: auto;
+
+    .sidebar__header {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.5em;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        color: #2c3e50; /* Dark text color */
+        background-color: white; /* Lighter header background color */
+        border-bottom: 2px solid #ecf0f1; /* Lighter border color */
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 60px;
+                margin-right: 10px;
+            }
+
+            h3 {
+                font-size: 1.2em;
+                margin: 0;
+                color: #000000; /* Slightly darker text color */
+            }
+            h3:hover {
+                color: white;
+            }
+        }
+    }
+
+    .sidebar__menu {
+        padding: 20px;
+        color: #060607; /* Slightly darker text color */
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            .optionContainer {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                li {
+                    padding: 14px 0;
+                    cursor: pointer;
+                    width: 100%;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #141617; /* Slightly darker text color */
+
+                        .icon {
+                            width: 30%;
+                            text-align: center;
+                        }
+
+                        .option {
+                            width: 70%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: rgb(
+                        131,
+                        152,
+                        255
+                    ); /* Lighter background color on hover */
+                    border-radius: 10px;
+                    color: white;
+
+                    h3 {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.rootClassModule {
+    width: 100%;
+    height: 100%;
+
+    // padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .center {
+        width: 100%;
+        height: fit-content;
+
+        // background-color: pink;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonQuiz {
+        background-color: blue;
+        border-radius: 15px;
+        cursor: pointer;
+
+        p {
+            padding: 15px 25px;
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    // .center {
+    //     width: calc(1800px - 340px - 340px);
+    //     height: 100%;
+
+    // .content {
+    //     width: 100%;
+    //     height: 100%;
+
+    //     .warning {
+    //         text-align: center;
+    //     }
+    // }
+
+    // .video {
+    //     margin-top: 50px;
+    //     width: 80%;
+    //     height: 60%;
+    // }
+    // }
+
+    // .right {
+    //     width: 340px;
+    //     height: 100%;
+    //     padding: 10px;
+    //     background-color: #fffafa;
+    //     border-radius: 20px;
+    // }
+}

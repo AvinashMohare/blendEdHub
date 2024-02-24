@@ -1,0 +1,101 @@
+// .quizes {
+//     // padding: 20px;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #fff;
+//     border-radius: 10px;
+
+//     // background-color: red;
+
+//     overflow-y: auto;
+//     overflow-x: hidden;
+
+//     &::-webkit-scrollbar {
+//         width: 0; /* Hide scrollbar */
+//     }
+
+//     &::-webkit-scrollbar-thumb {
+//         background-color: transparent; /* You can set a color for the scrollbar thumb */
+//         border-radius: 10px; /* You can add border-radius or other properties */
+//     }
+
+//     .heading {
+//         margin-bottom: 20px;
+//     }
+
+//     .quizes__card {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         padding: 10px;
+//         border: 1px solid #ccc;
+//         border-radius: 8px;
+
+//         margin-bottom: 10px;
+
+//         height: fit-content;
+
+//         .quizes__details {
+//             .quizes__name {
+//                 margin: 0;
+//                 font-size: 1.2em;
+//                 margin-bottom: 5px;
+
+//                 color: #fe9519;
+//                 font-weight: 700;
+//                 line-height: normal;
+//             }
+//         }
+//     }
+// }
+
+.quizes {
+    // padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+
+    // background-color: red;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0; /* Hide scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent; /* You can set a color for the scrollbar thumb */
+        border-radius: 10px; /* You can add border-radius or other properties */
+    }
+
+    .heading {
+        margin-bottom: 20px;
+    }
+
+    .quizes__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+
+        margin-bottom: 10px;
+
+        height: fit-content;
+
+        .quizes__details {
+            .quizes__name {
+                margin: 0;
+                font-size: 1.2em;
+                margin-bottom: 5px;
+
+                color: #fe9519;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}

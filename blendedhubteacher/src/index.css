@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Istok Web", sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 0; /* Hide scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent; /* You can set a color for the scrollbar thumb */
+        border-radius: 10px; /* You can add border-radius or other properties */
+    }
+}
